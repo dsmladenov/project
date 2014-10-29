@@ -1,14 +1,13 @@
 package controllers;
 
-import play.*;
 import play.mvc.*;
-
 import views.html.*;
+import web.constants.PageTitleConstants;
 
 public class Application extends Controller {
 
     public static Result index() {
-        return ok(index.render("Your new application is ready."));
+        return ok(page.render(PageTitleConstants.HOME_PAGE_TITLE));
     }
 
 }
