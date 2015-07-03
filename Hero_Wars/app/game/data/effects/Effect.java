@@ -1,4 +1,4 @@
-package backend.effect;
+package game.data.effects;
 
 public interface Effect {
 

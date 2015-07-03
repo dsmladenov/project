@@ -1,35 +1,41 @@
-package backend.champion;
+package game.data.champions;
 
+import game.data.abilities.Ability;
+import game.data.effects.Effect;
+
+import java.util.ArrayList;
 import java.util.List;
-
-import backend.ablility.Ability;
-import backend.effect.Effect;
 
 public class Champion {
 
 	private double health;
-	
+
 	private int manaCrystals;
-	
+
 	private List<Ability> abilities;
-	
+
 	private double attack;
-	
+
 	private double defence;
-	
+
 	private double magicAttack;
-	
+
 	private double magicDefence;
-	
+
 	private double speed;
-	
+
 	private List<Effect> appliedEffects;
+
+	public Champion() {
+		this.setAbilities(new ArrayList<>());
+		this.setAppliedEffects(new ArrayList<>());
+	}
 
 	public double getHealth() {
 		return health;
 	}
 
-	public void setHealth(double health) {
+	public void setHealth(final double health) {
 		this.health = health;
 	}
 
@@ -37,7 +43,7 @@ public class Champion {
 		return manaCrystals;
 	}
 
-	public void setManaCrystals(int manaCrystals) {
+	public void setManaCrystals(final int manaCrystals) {
 		this.manaCrystals = manaCrystals;
 	}
 
@@ -45,7 +51,7 @@ public class Champion {
 		return abilities;
 	}
 
-	public void setAbilities(List<Ability> abilities) {
+	public void setAbilities(final List<Ability> abilities) {
 		this.abilities = abilities;
 	}
 
@@ -53,7 +59,7 @@ public class Champion {
 		return attack;
 	}
 
-	public void setAttack(double attack) {
+	public void setAttack(final double attack) {
 		this.attack = attack;
 	}
 
@@ -61,7 +67,7 @@ public class Champion {
 		return defence;
 	}
 
-	public void setDefence(double defence) {
+	public void setDefence(final double defence) {
 		this.defence = defence;
 	}
 
@@ -69,7 +75,7 @@ public class Champion {
 		return magicAttack;
 	}
 
-	public void setMagicAttack(double magicAttack) {
+	public void setMagicAttack(final double magicAttack) {
 		this.magicAttack = magicAttack;
 	}
 
@@ -77,7 +83,7 @@ public class Champion {
 		return magicDefence;
 	}
 
-	public void setMagicDefence(double magicDefence) {
+	public void setMagicDefence(final double magicDefence) {
 		this.magicDefence = magicDefence;
 	}
 
@@ -85,7 +91,7 @@ public class Champion {
 		return speed;
 	}
 
-	public void setSpeed(double speed) {
+	public void setSpeed(final double speed) {
 		this.speed = speed;
 	}
 
@@ -93,10 +99,8 @@ public class Champion {
 		return appliedEffects;
 	}
 
-	public void setAppliedEffects(List<Effect> appliedEffects) {
+	public void setAppliedEffects(final List<Effect> appliedEffects) {
 		this.appliedEffects = appliedEffects;
 	}
-	
-	
-	
+
 }

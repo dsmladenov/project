@@ -1,8 +1,8 @@
-package backend.ablility;
+package game.data.abilities;
+
+import game.data.champions.Champion;
 
 import java.util.List;
-
-import backend.champion.Champion;
 
 public interface Ability {
 
